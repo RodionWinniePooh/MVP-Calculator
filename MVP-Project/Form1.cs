@@ -1,4 +1,6 @@
-
+using Data;
+using Domain;
+using Presentation;
 
 namespace MVP_Project
 {
@@ -55,6 +57,7 @@ namespace MVP_Project
         private void btnCalculate_Click(object sender, EventArgs e)
         {
             Calculate?.Invoke(this, EventArgs.Empty);
+            
         }
 
         private void txtInput_KeyPress(object sender, KeyPressEventArgs e)

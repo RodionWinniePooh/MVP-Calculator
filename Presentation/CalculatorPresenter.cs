@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System;
+using Data;
+using Domain;
 
-namespace MVP_Project
+
+namespace Presentation
 {
-    class CalculatorPresenter
+    public class CalculatorPresenter
     {
         private readonly ICalculatorView _view;
         private readonly CalculatorModel _model;
+
 
         public CalculatorPresenter(ICalculatorView view, CalculatorModel model)
         {
